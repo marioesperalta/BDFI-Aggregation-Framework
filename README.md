@@ -22,7 +22,7 @@ Crear con todos estos parámetros una query final que obtiene los pacientes sosp
 
 ## Pasos realizados y Resultados
 
-0. Instalación de herramientas necesarias y conexión a base de datos
+### 0. Instalación de herramientas necesarias y conexión a base de datos
 
 Para la realización de la práctica es necesario tener instalados:
 
@@ -78,7 +78,7 @@ db.partials.insertOne({mediagrises:275391.558018018})
 ```
 
 ### 2. El colesterol bueno o HDL lo tienen también bajo, inferior a 43. 
-En la colección hay un array llamado HDL_LDL, donde HDL es la primera posición y LDL la segunda. Guardar el número de pacientes que cumplen esta condición en “partials” así { HDLbajo: XXX }`
+En la colección hay un array llamado HDL_LDL, donde HDL es la primera posición y LDL la segunda. Guardar el número de pacientes que cumplen esta condición en “partials” así { HDLbajo: XXX }
 
 ```
 db.blood.aggregate([ 
@@ -114,7 +114,7 @@ db.partials.insertOne({MinHierro:62.6625})
 ```
 
 ### 4. Los individuos buscados tienen en su array al menos uno de los dos valores más típicos de la saturación de oxígeno en sangre. 
-Cada individuo tiene 3 muestras, con valores entre 95 y 100 y están en un array de nombre muestras_SPO2.(Ayuda: Primero habrá que calcular qué valor se repite más en este array y luego usar este valor para la búsqueda final).
+Cada individuo tiene 3 muestras, con valores entre 95 y 100 y están en un array de nombre muestras_SPO2. (Ayuda: Primero habrá que calcular qué valor se repite más en este array y luego usar este valor para la búsqueda final).
 
 Guardar el resultado de esta condición en “partials” así {
 muestras: [XXX, YYY] }
